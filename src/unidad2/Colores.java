@@ -37,7 +37,7 @@ public class Colores {
 						break;
 				}
 				
-				int componenteRGB = (int) Long.parseLong(in.readLine());
+				int componenteRGB = Integer.parseInt(in.readLine());
 				rgb[i][j] = componenteRGB;
 			} 
 			
