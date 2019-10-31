@@ -10,27 +10,27 @@ public class Hora {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		
 		System.out.println("Introduce la hora");
-		int hora = (int) Long.parseLong(in.readLine());
-		while(hora<0||hora>24) {
+		int hora = Integer.parseInt(in.readLine());
+		while(hora<0||hora>23) {
 			System.out.print("Introducción incorrecta, la hora ha de ser entre 0 y 23. Inténtalo de nuevo");
-			hora = (int) Long.parseLong(in.readLine());
+			hora = Integer.parseInt(in.readLine());
 		}
 		
 		System.out.println("Introduce los minutos");
-		int min = (int) Long.parseLong(in.readLine());		
-		while(min<0||min>60) {
+		int min = Integer.parseInt(in.readLine());		
+		while(min<0||min>59) {
 			System.out.print("No es correcto, los minutos han de ser entre 0 y 59. Inténtalo de nuevo");
-			min = (int) Long.parseLong(in.readLine());
+			min = Integer.parseInt(in.readLine());
 		}
 		
 		System.out.println("Introduce los segundos");		
-		int seg = (int) Long.parseLong(in.readLine());
-		while(seg<0||seg>60) {
+		int seg = Integer.parseInt(in.readLine());
+		while(seg<0||seg>59) {
 			System.out.print("No es correcto, los segundos han de ser entre 0 y 59. Inténtalo de nuevo");
-			seg = (int) Long.parseLong(in.readLine());
+			seg = Integer.parseInt(in.readLine());
 		}
 		
-		if (seg > 59) {
+		if (seg >= 59) {
 			seg = 0;
 			min = min+1;
 			}else {
