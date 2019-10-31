@@ -11,7 +11,7 @@ public class ParImpar {
 		BufferedReader in=new BufferedReader(new InputStreamReader(System.in));
 		
 		System.out.println("Introduce un número");
-		int num = (int) Long.parseLong(in.readLine());
+		int num = Integer.parseInt(in.readLine());
 
 		
 		if(num%2 == 0) {
