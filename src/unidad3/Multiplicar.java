@@ -22,6 +22,7 @@ public class Multiplicar {
 			int exc1=0;
 			while(exc1==0) {
 				try {
+					in = new BufferedReader(new InputStreamReader(System.in));
 					tabla = Integer.parseInt(in.readLine());
 					exc1=1;
 				}catch(NumberFormatException ex) {
