@@ -20,9 +20,6 @@ public class Operaciones {
 			
 			System.out.println("      OPERACIONES\n\nElige una opción\n1. Suma\n2. Resta\n3. Multiplicación\n4. División\n5. Salir");
 
-		/* ¿¿¿En las siguientes vueltas no solicita lectura de la variable opcion la primera vez, 
-			desconozco el motivo. En el ejercicio Multiplicar pasa lo mismo.???*/
-
 			while(exc == 0) {
 				try {
 					in = new BufferedReader(new InputStreamReader(System.in));
