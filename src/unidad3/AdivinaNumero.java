@@ -11,8 +11,6 @@ public class AdivinaNumero {
 		
 		int nAdiv = 0;
 		int exc = 0;
-		int mayor = 0;
-		int menor = 0;
 		char rep = ' ';
 		
 		//Visualizo los valores de Random para comprobar :)
@@ -41,10 +39,8 @@ public class AdivinaNumero {
 			System.exit(0);
 			}else if (nAdiv>rand){
 				System.out.print("No has acertado, tu número es mayor que Random.\n");
-				mayor = nAdiv;
 			}else {
 				System.out.print("No has acertado, tu número es menor que Random.\n");
-				menor = nAdiv;
 			}
 			
 			// Entre esos valores se tardaría mucho en acertar por lo que opto a que el usuario decida si quiere salir o seguir intentándolo.			
