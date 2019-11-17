@@ -84,4 +84,4 @@ public class AdivinoNumero {
 
 		} while (miNum != numOrd);
 	}
-}
+} 
